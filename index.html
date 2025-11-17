@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoeStore - Step in Style</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">ShoesStore</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="btn cart-btn">Cart</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-video">
+  <video autoplay muted loop id="bg-video">
+    <source src="SSYouTube.online_Shoes by 2GO - Theatrical Ad Film  Commercial_1080p.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="hero-content">
+    <h1>Step in Style</h1>
+    <p>Discover the latest collection of sneakers, sports, and casual shoes.</p>
+    <button class="btn">Shop Now</button>
+  </div>
+</section>
+
+
+  <!-- Products -->
+  <section class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="sneakers.jpeg" alt="Sneakers">
+        <div class="product-info">
+          <h3>Air Max Sneakers</h3>
+          <div class="price">₹4,999</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="product-jpeg.webp" alt="Running Shoes">
+        <div class="product-info">
+          <h3>Running Shoes</h3>
+          <div class="price">₹3,499</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="SC0732G-CLBR-1.webp" alt="Casual Shoes">
+        <div class="product-info">
+          <h3>Casual Loafers</h3>
+          <div class="price">₹2,299</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=800" alt="Sports Shoes">
+        <div class="product-info">
+          <h3>Sports Shoes</h3>
+          <div class="price">₹5,199</div>
+          <button onclick="goNextPage()" class="add-cart">Add to cart</button>
+           </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- New Arrivals Section -->
+<section class="new-arrivals">
+  <h2></h2>
+
+  <div class="arrival-grid">
+
+    <div class="arrival-card">
+      <img src="trakking shoese.webp" alt="New Sneakers">
+      <div class="arrival-info">
+        <h3>trekking shoes</h3>
+        <p class="price">₹4,299</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="arrival-card">
+      <img src="LM1992-TAN-RIGHT-1489x2048.jpg.webp"  alt="formal">
+      <div class="arrival-info">
+        <h3>Premium formal</h3>
+        <p class="price">₹5,499</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="arrival-card">
+      <img src="shoes 1.webp" alt="White Classics">
+      <div class="arrival-info">
+        <h3>White Classics</h3>
+        <p class="price">₹3,899</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="arrival-card">
+      <img src="boot.webp" alt="Sport Runner V2">
+      <div class="arrival-info">
+        <h3>Boot</h3>
+        <p class="price">₹4,999</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Shoes Socks Section -->
+<section class="socks">
+  <h2>Shoe Socks Collection</h2>
+
+  <div class="socks-grid">
+
+    <div class="sock-item">
+      <img src="sockes 1.jpg" alt="Sport Socks">
+      <h3>Sport Socks</h3>
+      <p>Comfortable socks for running & training.</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="sock-item">
+      <img src="sockes 2.jpg" alt="Casual Socks">
+      <h3>Casual Socks</h3>
+      <p>Stylish everyday socks for all shoes.</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="sock-item">
+      <img src="socke 3.webp" alt="Ankle Socks">
+      <h3>Ankle Socks</h3>
+      <p>Perfect fit for sneakers and trainers.</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="sock-item">
+      <img src="socke 4.jpeg" alt="Sports Crew Socks">
+      <h3>Sports Crew Socks</h3>
+      <p>Extra comfort and support for sports activities.</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+<!-- Women's Shoes Section -->
+<section class="women-shoes">
+  <h2>Women’s Shoes Collection</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="women 1.webp" alt="Elegant Heels">
+      <div class="product-info">
+        <h3>Elegant Heels</h3>
+        <div class="price">₹3,999</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women 2.jpg" alt="Ballerina Flats">
+      <div class="product-info">
+        <h3>Ballerina Flats</h3>
+        <div class="price">₹2,499</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women 31.webp" alt="Casual Sneakers">
+      <div class="product-info">
+        <h3>Casual Sneakers</h3>
+        <div class="price">₹3,299</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women 5.webp" alt="Summer Sandals">
+      <div class="product-info">
+        <h3>Summer Sandals</h3>
+        <div class="price">₹1,999</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Kids' Shoes Section -->
+<section class="kids-shoes">
+  <h2>Kids’ Shoes Collection</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="kids 1.webp" alt="Kids Sneakers">
+      <div class="product-info">
+        <h3>Kids Sneakers</h3>
+        <div class="price">₹1,799</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="" alt="Kids Sandals">
+      <div class="product-info">
+        <h3>Kids Sandals</h3>
+        <div class="price">₹1,299</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.imgur.com/QoLzB1C.png" alt="Casual Kids Shoes">
+      <div class="product-info">
+        <h3>Casual Kids Shoes</h3>
+        <div class="price">₹1,599</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.imgur.com/pzLzHc2.png" alt="Sports Kids Shoes">
+      <div class="product-info">
+        <h3>Sports Kids Shoes</h3>
+        <div class="price">₹1,999</div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions? We'd love to hear from you!</p>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form action="#" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>Address:</strong> 123 Shoe Street, City, Country</p>
+      <p><strong>Email:</strong> support@shoestore.com</p>
+      <p><strong>Phone:</strong> +91 9876543210</p>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <!-- Logo & About -->
+    <div class="footer-about">
+      <h3>ShoeStore</h3>
+      <p>Step in style with our premium collection of shoes, socks, and accessories for everyone.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: support@shoestore.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Addre
+
+
+
+
+
+
+
+  
+</body>
+</html>
+
+ 
